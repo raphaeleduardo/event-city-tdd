@@ -17,8 +17,7 @@ public class EventService {
 
 	@Autowired
 	private EventRepository repository;
-	
-	
+
 	@Transactional
 	public EventDTO update(Long id, EventDTO dto) {
 		try {

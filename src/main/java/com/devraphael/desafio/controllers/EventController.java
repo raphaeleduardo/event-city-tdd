@@ -17,7 +17,7 @@ public class EventController {
 
 	@Autowired
 	private EventService service;
-	
+
 	@PutMapping(value = "/{id}")
 	public ResponseEntity<EventDTO> update(@PathVariable Long id, @RequestBody EventDTO dto) {
 		dto = service.update(id, dto);

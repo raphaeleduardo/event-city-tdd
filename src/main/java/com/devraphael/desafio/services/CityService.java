@@ -21,21 +21,20 @@ public class CityService {
 
 	@Autowired
 	private CityRepository repository;
-	
+
 	@Transactional(readOnly = true)
 	public List<CityDTO> findAll() {
-		return repository.findAll(Sort.by("name")).stream()
-				.map(x -> new CityDTO(x)).collect(Collectors.toList());
+		return repository.findAll(Sort.by("name")).stream().map(x -> new CityDTO(x)).collect(Collectors.toList());
 	}
-	
+
 	@Transactional
 	public CityDTO insert(CityDTO dto) {
 		City entity = new City();
 		entity.setName(dto.getName());
 		entity = repository.save(entity);
-		return new CityDTO(entity);	
+		return new CityDTO(entity);
 	}
-	
+
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public void delete(Long id) {
 		if (!repository.existsById(id)) {
