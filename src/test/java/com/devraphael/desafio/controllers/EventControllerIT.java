@@ -1,4 +1,4 @@
-package com.devsuperior.bds02.controllers;
+package com.devraphael.desafio.controllers;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
