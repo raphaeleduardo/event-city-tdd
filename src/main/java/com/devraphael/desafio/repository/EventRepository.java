@@ -1,9 +1,11 @@
 package com.devraphael.desafio.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.devraphael.desafio.entities.City;
+import com.devraphael.desafio.entities.Event;
 
-public interface EventRepository extends JpaRepository<City, Long> {
+@Repository	
+public interface EventRepository extends JpaRepository<Event, Long> {
 
 }
