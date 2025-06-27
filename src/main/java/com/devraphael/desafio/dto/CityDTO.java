@@ -1,8 +1,8 @@
-package com.devsuperior.bds02.dto;
+package com.devraphael.desafio.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.bds02.entities.City;
+import com.devraphael.desafio.entities.City;
 
 public class CityDTO implements Serializable {
 	private static final long serialVersionUID = 1L;

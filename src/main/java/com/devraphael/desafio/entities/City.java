@@ -1,4 +1,4 @@
-package com.devsuperior.bds02.entities;
+package com.devraphael.desafio.entities;
 
 import java.util.ArrayList;
 import java.util.List;

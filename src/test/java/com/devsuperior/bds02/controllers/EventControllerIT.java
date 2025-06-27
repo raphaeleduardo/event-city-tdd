@@ -15,7 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.bds02.dto.EventDTO;
+import com.devraphael.desafio.dto.EventDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest
